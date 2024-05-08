@@ -67,28 +67,49 @@ int main()
     // Vector of vectors // 1 2 3
                         //  4 5
                         //  6 7 8 9
-    vector<vector<int>> vv;
-    int N;
-    cout << "ENter size of vector" << endl; // bahar ka vector
-    cin >> N;
-    for (int i = 0; i < N; i++)
-    {
-        int n;
-        cout << "enter the size of " << i << "vector" << endl;
-        cin >> n;
-        vector<int> temp; //Pehle ek temp vector ka independantly input le lenge and then woh chota andar waala vector humlog bahar waale vector me push back karenge..
-        for (int j = 0; j < n; j++)
-        {
-            int x;
-            cin >> x;
-            temp.push_back(x);
-        }
-        vv.push_back(temp); //basiaclly vv is a vector of vectors and humlog vv me ek pura vector push back karenge
-    }
+    // vector<vector<int>> vv;
+    // int N;
+    // cout << "ENter size of vector" << endl; // bahar ka vector
+    // cin >> N;
+    // for (int i = 0; i < N; i++)
+    // {
+    //     int n;
+    //     cout << "enter the size of " << i << "vector" << endl;
+    //     cin >> n;
+    //     vector<int> temp; //Pehle ek temp vector ka independantly input le lenge and then woh chota andar waala vector humlog bahar waale vector me push back karenge..
+    //     for (int j = 0; j < n; j++)
+    //     {
+    //         int x;
+    //         cin >> x;
+    //         temp.push_back(x);
+    //     }
+    //     vv.push_back(temp); //basiaclly vv is a vector of vectors and humlog vv me ek pura vector push back karenge
+    // }
 
-    for(int i=0; i<N;i++){
-        printVec(vv[i]);
-    }
+    // for(int i=0; i<N;i++){
+    //     printVec(vv[i]);
+    // }
+
+    // initialising a vector of vectors with a custom size..
+    //Number of columns
+	int num_col = 3;
+
+	// Number of rows
+	int num_row = 4;
+
+	// Initializing a single row
+	vector<int> row(num_col, 0);
+
+	// Initializing the 2-D vector
+	// vector<vector<int>> v(num_row, row) ;
+    // ORR
+    vector<vector<int>> v (num_row, vector<int>(3,0));
+
+	for(int i=0;i<v.size();i++){
+		for(int j=0;j<v[i].size();j++)
+			cout<<v[i][j]<<" ";
+		cout<<endl;
+	}		
 
     return 0;
 }
