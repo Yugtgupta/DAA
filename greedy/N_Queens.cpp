@@ -1,6 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// for loops isme start from i=1 to <=n or k
+// X vector n+1 size ka declare karo and sabko 0 initialize kardo..
+
+
 void print_array(vector<int> arr)
 {
     for (int i = 0; i < arr.size(); i++)
@@ -19,7 +23,7 @@ bool can_place(int k, int i, vector<int> X)
             return false;
         }
     }
-    return true;
+    return true;  //remember ki end me return true!!!!
 }
 
 void NQueens(int k, int n, vector<int> X)
