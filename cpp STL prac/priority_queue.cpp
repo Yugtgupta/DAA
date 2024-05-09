@@ -50,7 +50,7 @@ int main(){
     // }
 
     //min-heap for a priority queue containing data of pair<int,int>
-    priority_queue<pair<int,int>,vector<pair<int,int>>,greater<pair<int,int>>> pq;
+    priority_queue<pair<int,int>,vector<pair<int,int>>,greater<pair<int,int>>> pq; //note that isme hum greater<dtype> () roundbrackets nahi daalte like the usual vectors and all ka sorting jaisa..
     pq.push({ 50, 11 });
     pq.push({ 20, 41 });
     pq.push({ 10, 21 });
