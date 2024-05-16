@@ -34,6 +34,8 @@ int main(){
     cin >> n >> m;
     cout << "Enter the edges u,v with their respective weights" << endl;
     
+    // Note that we can also use the adjacency list to store the graph and then make the edges vector from the adjacency list
+    // There will be duplicate edges in the edges vector as bidirectional graph but no problem as our algo will take care of it
     // Creating an edges vector - (wt,u,v) 
     vector<pair<int,pair<int,int>>> edges;
     for(int i = 0;i<m;i++){
