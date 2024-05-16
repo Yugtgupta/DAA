@@ -103,7 +103,7 @@ int main()
 	// Initializing the 2-D vector
 	// vector<vector<int>> v(num_row, row) ;
     // ORR
-    vector<vector<int>> v (num_row, vector<int>(3,0));
+    vector<vector<int>> v (num_row, vector<int>(num_col,0));
 
 	for(int i=0;i<v.size();i++){
 		for(int j=0;j<v[i].size();j++)
