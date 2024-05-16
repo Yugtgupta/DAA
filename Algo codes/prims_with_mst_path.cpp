@@ -51,13 +51,6 @@ int main(){
     }
     int visited[n+1] = {0};
     Prims(1,visited,adj);
-
-    // for(int i = 0;i<n;i++){ // to view the adj list
-    //     for(int j = 0;j<adj[i].size();j++){
-    //         cout << i << "-" << adj[i][j].second << "->" << adj[i][j].first << " ";
-    //     }
-    //     cout << endl;
-    // }
-
+    
     return 0;
 }
