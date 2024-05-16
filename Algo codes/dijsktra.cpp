@@ -36,7 +36,7 @@ int main(){
     adj[4] = {{1,2}, {3,5}};
     adj[5] = {{2,3}, {6,2}, {3,4}};
     int start = 0;
-    vector<int> distance(n,INT_MAX);
+    vector<int> distance(n,INT_MAX); //vector hi declare karo rather than array
     dijsktra(start,distance,adj); // start,number of nodes and adj list
 
     return 0;
