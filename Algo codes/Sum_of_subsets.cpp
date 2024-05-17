@@ -17,7 +17,7 @@ void sum_of_subsets(int curr_sum, int k, int rem, vector<int> w, vector<int> X, 
     {
         print_array(X);
     }
-    if (curr_sum + w[k] + w[k + 1] <= M)
+    if (curr_sum + w[k] + w[k + 1] <= M && curr_sum + rem >= M)
     {
         sum_of_subsets(curr_sum + w[k], k + 1, rem - w[k], w, X, M);
     }
